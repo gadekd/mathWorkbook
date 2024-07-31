@@ -1,6 +1,6 @@
 <template>
   <ion-page>
-    <custom-header></custom-header>
+    <custom-header />
 
     <ion-content :fullscreen="true" class="ion-padding">
       <ion-header collapse="condense">
@@ -11,7 +11,7 @@
 
       <ion-card>
         <ion-card-header>
-          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-title>Teoria</ion-card-title>
           <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         </ion-card-header>
         <ion-card-content> Link </ion-card-content>
@@ -19,7 +19,28 @@
 
       <ion-card>
         <ion-card-header>
-          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-title>Przykłady zadań</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content> Link </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Quizy</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content> Link </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-thumbnail>
+            <p>Ikona</p>
+            <!-- <font-awesome-icon :icon="['fas', 'play']" /> -->
+            <!-- <ion-icon :icon="play" class="thumbnail-icon"></ion-icon> -->
+          </ion-thumbnail>
+          <ion-card-title>Kontakt</ion-card-title>
           <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         </ion-card-header>
         <ion-card-content> Link </ion-card-content>
@@ -30,13 +51,21 @@
 
 <script setup lang="ts">
 import {
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
   IonContent,
   IonHeader,
   IonPage,
+  IonThumbnail,
   IonTitle,
   IonToolbar,
 } from "@ionic/vue";
-import { CustomHeader } from "./components/CustomHeader.vue";
+import { play } from 'ionicons/icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import CustomHeader from "./components/CustomHeader.vue";
 </script>
 
 <style scoped>
@@ -66,5 +95,9 @@ import { CustomHeader } from "./components/CustomHeader.vue";
 
 #container a {
   text-decoration: none;
+}
+
+.thumbnail-icon {
+  margin: 0.5em 0;
 }
 </style>
