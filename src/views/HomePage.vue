@@ -1,28 +1,41 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Blank</ion-title>
-      </ion-toolbar>
-    </ion-header>
+    <custom-header></custom-header>
 
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" class="ion-padding">
       <ion-header collapse="condense">
         <ion-toolbar>
           <ion-title size="large">Blank</ion-title>
         </ion-toolbar>
       </ion-header>
 
-      <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-      </div>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          Link
+        </ion-card-content>
+      </ion-card>
+  
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          Link
+        </ion-card-content>
+      </ion-card>
+  
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { CustomHeader } from './components/CustomHeader.vue';
 </script>
 
 <style scoped>
