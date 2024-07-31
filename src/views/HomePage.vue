@@ -14,34 +14,35 @@
           <ion-card-title>Card Title</ion-card-title>
           <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         </ion-card-header>
-        <ion-card-content>
-          Link
-        </ion-card-content>
+        <ion-card-content> Link </ion-card-content>
       </ion-card>
-  
+
       <ion-card>
         <ion-card-header>
           <ion-card-title>Card Title</ion-card-title>
           <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         </ion-card-header>
-        <ion-card-content>
-          Link
-        </ion-card-content>
+        <ion-card-content> Link </ion-card-content>
       </ion-card>
-  
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
-import { CustomHeader } from './components/CustomHeader.vue';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/vue";
+import { CustomHeader } from "./components/CustomHeader.vue";
 </script>
 
 <style scoped>
 #container {
   text-align: center;
-  
+
   position: absolute;
   left: 0;
   right: 0;
@@ -57,9 +58,9 @@ import { CustomHeader } from './components/CustomHeader.vue';
 #container p {
   font-size: 16px;
   line-height: 22px;
-  
+
   color: #8c8c8c;
-  
+
   margin: 0;
 }
 
